@@ -1,0 +1,85 @@
+#toggle {
+    display: none;
+}
+.toplabel{
+    position: fixed;
+    border: 1px solid var(--nc-tx-2);
+    top: .5rem;
+    right: 1rem;
+    z-index: 9;
+    padding: .2rem .3rem;
+    width: 1.5rem;
+    background-color: var(--yellow-bg);
+    font-size: 1.5rem;
+    border-radius: .3rem;
+}
+
+#toggle:checked ~ .toplabel{
+    background-color: var(--red-bg);
+}
+
+#toggle:checked ~ .topmenu{
+    right: 1em;
+}
+
+.topnav{
+    background-color: var(--yellow-bg);
+}
+.topmenu{
+    background-color: var(--yellow-bg);
+    max-width: 22.5rem;
+    width: 21rem;
+    position: fixed;
+    top: 3.5rem;
+    right: -25rem;
+    z-index: 8;
+    transition: all .5s ease;
+}
+.topmenu a{
+    display: block;
+    color: var(--nc-tx-2);
+    text-align: center;
+    text-decoration: none;
+    padding: .3rem 1rem;
+    border-bottom: 1px solid var(--nc-tx-2);
+}
+.socialbutts{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+.socialbutts a{
+    border: 0;
+}
+
+@media screen and (min-width: 60rem){
+    .topnav label{
+        display: none;
+    }
+
+    .topmenu{
+        background-color: var(--yellow-bg);
+        max-width: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0rem;
+        right: 0rem;
+    }
+    .topmenu{
+        display: flex;
+        flex-flow: row;
+        justify-content:space-around;
+    }
+    .topmenu a{
+        padding: .5rem 3rem;
+        border: 0;
+    }
+    .socialbutts a{
+        padding: .5rem 1rem;
+
+    }
+    .socialbutts a:last-child {
+        padding: .5rem 2rem .5rem 1rem;
+    }
+    
+}

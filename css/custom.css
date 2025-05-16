@@ -1,0 +1,116 @@
+header {
+	background: var(--nc-bg-2);
+	border-bottom: 1px solid var(--nc-bg-3);
+    /*
+	padding: 2rem 1.5rem;
+	
+	/* This sets the right and left margins to cancel out the body's margins. It's width is still the same, but the background stretches across the page's width. */
+    /*
+	margin: -2rem calc(50% - 50vw) 2rem;
+
+	/* Shorthand for:
+
+	margin-top: -2rem;
+	margin-bottom: 2rem;
+
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw); */
+    /*
+	padding-left: calc(50vw - 50%);
+	padding-right: calc(50vw - 50%);*/
+}
+
+
+header > *:first-child{
+    margin-top: 0rem;
+    padding-top: 0;
+    align-items: center;
+    text-align: center;
+}
+header section img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.value{
+    text-align: center;
+}
+.value h1{
+    margin: auto;
+	background-color: var(--yellow-bg);
+    width: 80px;
+	height: 40px;
+	border-radius: 50%;
+    border: 1px solid var(--nc-tx-1);
+    padding: 1.5rem .3rem;
+    /*
+    text-align: center;
+    vertical-align: middle;
+    line-height: 80px; */
+    margin: 0 auto;
+}
+.bannerBg{
+    padding: 2rem min(8rem, 10%);
+    max-width: 100%;
+	background-color: var(--banner-bg);
+}
+.footerBg{
+    padding: 1rem 2rem;
+    background-color: var(--banner-bg);
+}
+
+.yellowBg{
+    padding-top: 1rem;
+    max-width: 100%;
+	background-color: var(--yellow-bg);
+}
+
+.svgLogo{
+    display: block;
+    width: 7rem;
+    margin: 0 auto;
+}
+header h1,
+header h2,
+header h3{
+    font-weight: 300;
+    padding-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+
+.texti{
+    font-family: monospace;
+}
+
+.voru div:hover {
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px white;
+}
+
+.voru div img{
+    width: min(8rem,50%);
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+}
+.voru div h2{
+    font-size: 18px;
+    font-weight: 700;
+}
+.voru div p{
+    font-size: 16px;
+}
+#midi{
+    margin-top: 0rem;
+}
+.Store-title{
+    padding-top: 4rem;
+}
+.thank_you{
+    font-size: 100rem;
+}

@@ -1,0 +1,71 @@
+
+#midi{
+  background-color: var(--yellow-bg);
+  border-image: linear-gradient(to right, #efb7ed 0%, #b8b8ff 100%) 1;
+	border-radius: 0%;
+	border-width: 4px;
+	border-style: solid;
+}
+
+td,
+th {
+	/*border: 1px solid var(--nc-bg-3); */
+	text-align: left;
+	padding: .5rem;
+}
+
+th {
+	background: var(--table-bg);
+}
+
+/*
+tr td:nth-child(3), tr td:nth-child(4){
+    width: 16%;
+}
+*/
+tr:nth-child(even) {
+	/* Set every other cell slightly darker. Improves readability. */
+	background: var(--table-bg);
+}
+
+table caption:first-child {
+	font-weight: bold;
+}
+table caption {
+	margin-bottom: .5rem;
+}
+
+table {
+	/* border-collapse sets the table's elements to share borders, rather than floating as separate "boxes". */
+	border-collapse: collapse;
+	width: 100%
+}
+
+@media screen and (max-width: 600px) {
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      /*border-bottom: 3px solid #ddd;*/
+      display: block;
+    }
+    
+    table td {
+      /*border-bottom: 1px solid #ddd;*/
+      display: block;
+      text-align: right;
+    }
+    
+    table td::before {
+      content: attr(data-label);
+      float: left;
+    }
+  }

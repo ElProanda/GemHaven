@@ -1,0 +1,122 @@
+.button,
+a button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	font-size: 1rem;
+	display: inline-block;
+	padding: 6px 12px;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	background: var(--yellow-bg); /*skipta ut --nc-lk-1 til --yellow bg */
+	border: 0;
+	border-radius: 4px;
+	box-sizing: border-box;
+	cursor: pointer;
+	color: var(--nc-tx-2);
+}
+.button, .order, .slideshow_order{
+	font-size: 1rem;
+	display: inline-block;
+	padding: 6px 12px;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	background: rgba(249, 249, 249, 0.25);
+	cursor: pointer;
+	color: var(--nc-tx-2);
+	box-sizing: border-box;
+	border-image: linear-gradient(to right, #efb7ed 0%, #b8b8ff 100%) 1 0;
+	border-radius: 0%;
+	border-width: 4px;
+	border-style: solid;
+}
+.order{
+	background: var(--nc-bg-2);
+	border-image: linear-gradient(to right, #efb7ed 0%, #b8b8ff 100%) 1;
+	border-width: 2px;
+}
+.order2{
+	background: var(--nc-bg-2);
+	border-image: linear-gradient(to right, #efb7ed 0%, #b8b8ff 100%) 1;
+	border-width: 2px;
+	margin-top: 4rem;
+}
+
+.slideshow_order{
+	display: grid;
+	background: none;
+	border: none;
+	grid-template-columns: 1fr 2fr 1fr;
+	justify-items: center;
+}
+.slideshow_order img{
+	width: 100px;
+	aspect-ratio: 1/1;
+}
+
+.button:hover{
+	box-shadow: 0px 10px 10px rgba(255, 255, 255, 0.9) inset;
+}
+
+
+a button[disabled],
+button[disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="button"][disabled] {
+	cursor: default;
+	opacity: 0.5;
+
+	/* Set the [X] cursor while hovering a disabled link */
+	cursor: not-allowed;
+}
+
+.button:focus,
+.button:enabled:hover,
+button:focus,
+button:enabled:hover,
+input[type="submit"]:focus,
+input[type="submit"]:enabled:hover,
+input[type="reset"]:focus,
+input[type="reset"]:enabled:hover,
+input[type="button"]:focus,
+input[type="button"]:enabled:hover {
+	background: rgba(233, 201, 242, 0.25);
+	
+}
+
+textarea,
+select,
+input {
+	padding: 6px 12px;
+	margin-bottom: .5rem;
+	background: var(--nc-bg-2);
+	color: var(--nc-tx-2);
+	border: 1px solid var(--nc-bg-3);
+	border-radius: 4px;
+	box-shadow: none;
+	box-sizing: border-box;
+}
+input[type="tel"],
+input[type="email"],
+input[type="text"],
+input[type="time"],
+input[type="date"],
+input[type="number"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+}
+
+textarea[placeholder] {
+	color: white;
+}
+
+::-webkit-calendar-picker-indicator {
+    background-color: white;
+	border: 50%;
+}

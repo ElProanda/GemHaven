@@ -1,0 +1,177 @@
+.rammi {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    line-height: 1.5;
+    justify-content: space-between;
+}
+
+.rammi > div {
+    padding: 0.5rem;
+    background-color: var(--yellow-bg);
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+	box-sizing: border-box;
+	border-image: linear-gradient(to right, #efb7ed 0%, #b8b8ff 100%) 1;
+	border-radius: 0%;
+	border-width: 4px;
+	border-style: solid;
+}
+
+.form-2,
+.form-3,
+.col-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}
+.col-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.col-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.col-4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.col-5{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.col-6{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.col-2-1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    row-gap: 1rem;
+}
+
+.container{
+    padding: 0 .5rem 2rem .5rem;
+}
+.container-banner{
+    padding: 2.5rem 4rem 0rem 4rem;
+}
+
+.b2{
+    z-index: 10000;
+}
+.hero_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero_img{
+    height: auto;
+    aspect-ratio: 4/7;
+    object-fit: cover;
+}
+
+.about_us{
+    line-height: calc(1.5vw + 1rem);
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 27rem)  {
+    .hero_img{
+        aspect-ratio: 9/16;
+    }
+    .container-banner{
+        padding: 0rem 1rem ;
+    }
+
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-2-1{
+        gap: 2rem;
+        row-gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .container{
+        padding: 0 1rem;
+    }
+    .landing{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (min-width: 48rem)  {
+    .hero_img{
+        aspect-ratio: 1/1;
+    }
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6{
+        gap: 2rem;
+        row-gap: 1rem;
+    }
+    .col-2-1{
+        gap: 2rem;
+        row-gap: 1rem; 
+    }
+    .container{
+        padding: 0 2rem 2rem 2rem;
+    }
+    .landing{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (min-width: 60rem)  {
+    .hero_img{
+        aspect-ratio: 16/9;
+    }
+    .form-2{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .form-3{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-2-1{
+        gap: 2rem;
+        row-gap: 1rem;
+    }
+    .container{
+        max-width: 100%;
+        margin: auto;
+    }
+    .landing{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 80rem)  {
+    .container{
+        padding: 0 3rem 2rem 3rem;
+    }
+
+}
+
+fieldset {
+	margin-top: 0rem;
+	padding: 1rem;
+	border: 1px solid var(--nc-bg-3);
+	border-radius: 4px;
+}
+
+legend {
+	padding: 0.5rem;
+}
+
+textarea {
+	/* Don't let the <textarea> extend off the screen naturally or when dragged by the user */
+	max-width: 100%;
+}
+
